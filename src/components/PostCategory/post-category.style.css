@@ -1,0 +1,29 @@
+.post-category-container {
+    position: relative;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transition: .2s;
+}
+
+.post-category-container:hover {
+    transform: scale(102%);
+    filter: brightness(70%);
+    transition: .2s;
+}
+
+.post-category-container img {
+    width: 400px;
+    filter: brightness(60%);
+    border-radius: 1.2rem;
+}
+
+.post-category-container h2 {
+    color: #fff;
+    width: 300px;
+    position: absolute;
+    transform: translateY(-65px) translateX(10px);
+    background-color: #bf0603;
+    padding: 1rem;
+    font-size: .9rem;
+    border-radius: 1rem;
+}

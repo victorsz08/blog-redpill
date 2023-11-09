@@ -1,0 +1,19 @@
+.home-container {
+    height: 100vh;
+    padding: 100px 20px;
+}
+
+.home-container h1 {
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    background-color: #bf0603;
+    margin-bottom: 20px;
+}
+
+.home-container .posts-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

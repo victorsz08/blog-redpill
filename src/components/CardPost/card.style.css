@@ -1,0 +1,43 @@
+.card-conteiner {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-conteiner img {
+    width: 200px;
+    margin-right: 1rem;
+}
+
+
+.card-conteiner .info-container {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000000;
+}
+
+.card-conteiner .info-container h2 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.card-conteiner .info-container h6 {
+    background-color: #bf0603;
+    color: #fff;
+    padding: .5rem;
+    width: 130px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-conteiner .info-container p {
+    font-style: italic;
+    font-size: .8rem;
+    margin-top: .9rem;
+    font-weight: 300;
+}

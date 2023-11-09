@@ -1,0 +1,15 @@
+.footer-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: #1a1a1a;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-container p {
+    font-size: .8rem;
+}
