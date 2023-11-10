@@ -1,17 +1,41 @@
+import { useEffect, useState } from 'react';
 import { CardPost } from '../../components/CardPost';
 import { PostCategory } from '../../components/PostCategory';
+import { IPost } from '../../interfaces';
 import './home.style.css';
+import http from '../../http';
 
 
 
 export const HomePage = () => {
+    const [posts, setPosts] = useState<IPost[]>([]);
+
+    useEffect(() => {
+        http.get('posts?order=DESC&perPage=3&field=id&sort=id')
+            .then(response => {
+                setPosts(response.data)
+                console.log(response.data)
+            }).catch(error => {
+                console.log(error?.response?.data)
+            })
+    },[])
+
+
     return (
         <main className="home-container">
             <h1>Ultimas Postagens</h1>
             <div className="posts-container">
-                <CardPost image='/src/assets/image.jpg' title='Uma nova era de cães  na tela do seu computador' id='1' category="Moda Masculina"/>
-                <CardPost image='/src/assets/image.jpg' title='Uma nova era de cães  na tela do seu computador' id='2' category="Desenvolvimento Pessoal"/>
-                <CardPost image='/src/assets/image.jpg' title='Uma nova era de cães  na tela do seu computador' id='3' category="Red Pill"/>
+                {posts && posts.map((post, index) => (
+                    <>
+                    <CardPost 
+                    key={index}
+                    title={post.title} 
+                    id={post.id} 
+                    category={post?.category === "redPill" ? "Red Pill" : post.category === "fashionMen" ? "Moda Masculina" : "Desenvolvimento Pessoal"}
+                    image={post.image}
+                    />
+                    </>
+                ))}
             </div>
             <h1>Categorias</h1>
             <div className="posts-category">

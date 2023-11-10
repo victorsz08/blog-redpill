@@ -2,7 +2,8 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 2rem;
-    width: 500px;
+    margin-right: 1rem;
+    width: 600px;
 }
 
 a {
@@ -10,8 +11,14 @@ a {
 }
 
 .card-conteiner img {
+    min-width: 200px;
+    max-width: 200px;
     width: 200px;
+    min-height: 120px;
+    max-height: 120px;
+    height: 120px;
     margin-right: 1rem;
+    object-fit: cover;
 }
 
 
@@ -30,7 +37,7 @@ a {
     background-color: #bf0603;
     color: #fff;
     padding: .5rem;
-    width: 130px;
+
     border-radius: 1rem;
     margin-bottom: 1rem;
 }

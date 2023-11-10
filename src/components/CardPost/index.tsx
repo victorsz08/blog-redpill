@@ -5,7 +5,7 @@ import './card.style.css';
 
 export const CardPost = ({id, title, image, category}: IPost) => {
     return (
-        <Link to={`/postagens/categorias/${category?.toLowerCase().split(" ").join("")}/${id}`}>
+        <Link to={`/postagens/categorias/${category?.toLowerCase().split(" ").join("")}/${id}`} key={id}>
         <div className="card-conteiner" >
             <img src={image}/>
             <div className="info-container">
