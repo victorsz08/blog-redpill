@@ -1,0 +1,90 @@
+.post-page-container {
+    padding: 150px 30px;
+    height: 100vh;
+    
+}
+
+.loading-page {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.post-page-container .post-container {
+    margin-bottom: 3rem;
+    width: 900px;
+}
+
+.post-page-container .post-container h3 {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #575757;
+    font-style: italic;
+}
+
+.post-page-container .post-container h1 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.post-page-container .post-container h5 {
+    color: #fff;
+    background-color: #bf0603;
+    padding: .5rem;
+    width: 130px;
+    border-radius: 1.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post-page-container .post-container img {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.post-page-container .post-container p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #575757;
+}
+
+
+.post-page-container .post-container .content-post-container {
+    margin-bottom: 3rem;
+}
+
+.post-page-container .post-container .content-post-container p,
+.post-page-container .post-container .content-post-container h1, 
+.post-page-container .post-container .content-post-container h2,
+.post-page-container .post-container .content-post-container h3,
+.post-page-container .post-container .content-post-container h4,
+.post-page-container .post-container .content-post-container h5,
+.post-page-container .post-container .content-post-container h6,
+.post-page-container .post-container .content-post-container ul,
+.post-page-container .post-container .content-post-container li,
+.post-page-container .post-container .content-post-container img {
+    margin-bottom: 2.5rem;
+}
+
+.post-page-container .post-container .info-author-container h6 {
+    font-size: .9rem;
+    color: #575757;
+    font-style: italic;
+    margin-bottom: .7rem;
+}
+
+.post-page-container .post-container .info-author-container p {
+    font-size: .8rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.post-page-container .realeses-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

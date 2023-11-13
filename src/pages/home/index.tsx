@@ -6,12 +6,11 @@ import './home.style.css';
 import http from '../../http';
 
 
-
 export const HomePage = () => {
     const [posts, setPosts] = useState<IPost[]>([]);
 
     useEffect(() => {
-        http.get('posts?order=DESC&perPage=3&field=id&sort=id')
+        http.get('posts?order=DESC&perPage=4&field=id&sort=id')
             .then(response => {
                 setPosts(response.data)
                 console.log(response.data)
@@ -39,9 +38,9 @@ export const HomePage = () => {
             </div>
             <h1>Categorias</h1>
             <div className="posts-category">
-                <PostCategory image='/src/assets/image.jpg' title='Moda Masculina' />
-                <PostCategory image='/src/assets/image.jpg' title='Desenvolvimento Pessoal' />
-                <PostCategory image='/src/assets/image.jpg' title='Red Pill'/>
+                <PostCategory image='/src/assets/fashion.jpg' title='Moda Masculina' />
+                <PostCategory image='/src/assets/development.jpg' title='Desenvolvimento Pessoal' />
+                <PostCategory image='/src/assets/redpill.jpg' title='Red Pill'/>
             </div>
         </main>
     )

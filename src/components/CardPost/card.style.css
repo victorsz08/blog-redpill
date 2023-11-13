@@ -4,6 +4,13 @@
     margin-bottom: 2rem;
     margin-right: 1rem;
     width: 600px;
+    transition: .4s;
+}
+
+.card-conteiner:hover {
+    filter: brightness(70%);
+    transform: scale(99%);
+    transition: .4s;
 }
 
 a {

@@ -28,6 +28,7 @@
 }
 
 .header-container .header-options a {
+    align-items: center;
     text-decoration: none;
     margin: 0 1rem;
     font-weight: 700;
